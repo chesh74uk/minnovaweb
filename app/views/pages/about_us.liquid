@@ -8,7 +8,7 @@ listed: true
 published: true
 
 # true if the page can be used as a layout for new pages created by the editors
-# is_layout: true
+is_layout: true
 
 # position among sibling pages
 # position: 1
@@ -27,10 +27,7 @@ published: true
 #   'some_block/some_slug': "<text>"
 #   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
 ---
-{% extends parent %}
-
+{% extends 'layouts/simple' %}
 {% block main %}
-
-  <p>Accelerative lower a particle. </p>
 
 {% endblock %}

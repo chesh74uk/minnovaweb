@@ -11,3 +11,9 @@ I, [2017-05-24T09:58:53.859791 #102105]  INFO -- : Listening on 0.0.0.0:3333, CT
 I, [2017-05-24T10:00:56.322740 #102256]  INFO -- : Thin web server (v1.6.4 codename Gob Bluth)
 I, [2017-05-24T10:00:56.322861 #102256]  INFO -- : Maximum connections set to 1024
 I, [2017-05-24T10:00:56.322880 #102256]  INFO -- : Listening on 0.0.0.0:3333, CTRL+C to stop
+I, [2017-05-24T10:18:26.971567 #102759]  INFO -- : Thin web server (v1.6.4 codename Gob Bluth)
+I, [2017-05-24T10:18:26.971688 #102759]  INFO -- : Maximum connections set to 1024
+I, [2017-05-24T10:18:26.971709 #102759]  INFO -- : Listening on 0.0.0.0:3333, CTRL+C to stop
+I, [2017-05-24T10:30:33.182063 #103083]  INFO -- : Thin web server (v1.6.4 codename Gob Bluth)
+I, [2017-05-24T10:30:33.182610 #103083]  INFO -- : Maximum connections set to 1024
+I, [2017-05-24T10:30:33.182638 #103083]  INFO -- : Listening on 0.0.0.0:3333, CTRL+C to stop
