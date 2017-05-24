@@ -9,10 +9,13 @@ published: true
 <div class="container">
   <div class="jumbotron">
     {% editable_text jumbotron, rows: 5, priority: 1 %}
-      <h1 class="text-danger">Arrggggh, page not found</h1>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      <h1 class="text-center">Whoops, page not found!</h1>
     {% endeditable_text %}
   </div>
+  <h5 class="text-center">Your requested page could not be found or it is currently unavailable.</h5>
+  <h5 class="text-center">Please <a href="{% path_to home %}">click here</a> to go back to our home page</h5>
 </div>
+
+
 
 {% endblock %}
