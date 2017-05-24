@@ -14,3 +14,9 @@
 #   password: apassword
 #   # api_key: <your api key here>
 #   # ssl: true
+
+development:
+  host: http://localhost:3000
+  handle: fluttering-lagoon-1334
+  email: chesh@chesh.info
+  api_key: 5925ed83aacf75b0198927314b17e6805ca1ea34
