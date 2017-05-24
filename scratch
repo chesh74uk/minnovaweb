@@ -10,23 +10,3 @@ Alignment, voyage, and honor. Brave adventures lead to the love. Ships are the p
 
 Sensor at the wormhole was the alignment of voyage, attacked to a reliable creature.
 
-
-
-                          <label for="inputName" class="col-lg-2 control-label">Name</label>
-                              <div class="col-lg-10">
-                                <input class="form-control" id="inputName" type="text">
-                              </div>
-
-                          <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-                            <div class="col-lg-10">
-                              <input class="form-control" id="inputEmail" placeholder="Email" type="text">
-                            </div>
-
-                           <label for="textArea" class="col-lg-2 control-label">Message</label>
-                             <div class="col-lg-10">
-                               <textarea class="form-control" rows="3" id="textArea"></textarea>
-                               <span class="help-block">Please enter your message here</span>
-                             </div>
-                             <div class="col-lg-10 col-lg-offset-2">
-                                 <button type="submit" class="btn btn-primary">Submit</button>
-                             </div>

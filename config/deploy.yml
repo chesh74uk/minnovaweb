@@ -20,3 +20,9 @@ development:
   handle: fluttering-lagoon-1334
   email: chesh@chesh.info
   api_key: 5925ed83aacf75b0198927314b17e6805ca1ea34
+
+production:
+  host: https://minnova-web.herokuapp.com
+  handle: sensitive-chasm-6112
+  email: chesh@chesh.info
+  api_key: 06200d8736045be8668892b8d71ce6ffbf660e08
