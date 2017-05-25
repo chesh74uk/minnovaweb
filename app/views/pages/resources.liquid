@@ -31,7 +31,7 @@ published: true
 
 {% block content %}
 {%  editable_model, resources, hint: 'edit resource links' %}
-  <p>Hello list of resources</p>
+  <p>Our list of resources</p>
     <ul>
       {% for resource in contents.resources %}
         <li><a href="{% path_to resource %}">{{ resource.title }}</a></li>

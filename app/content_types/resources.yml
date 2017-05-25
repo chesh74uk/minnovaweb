@@ -66,6 +66,13 @@ fields:
     hint: Add an image
     localized: false
 
+- document_name: # The lowercase, underscored name of the field
+    label: Document name
+    type: string
+    required: false
+    hint: Name of the document
+    localized: false
+
 - document: # The lowercase, underscored name of the field
     label: Document # Human readable name of the field
     type: file
