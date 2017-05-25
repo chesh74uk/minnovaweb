@@ -1,0 +1,11 @@
+---
+title: Resource template page
+content_type: resources
+---
+{% extends 'layouts/simple' %}
+{% block content %}
+<h1>{{ resource.title }}</h1>
+<p>{{ resource.description }}</p>
+    <p><img src="{{ resource.image.url }}"></p>
+    <p><a href ="{{ resource.document.url }}">Link to document</a></p>
+{% endblock %}
