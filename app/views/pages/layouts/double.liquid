@@ -1,0 +1,25 @@
+---
+title: Double columns
+---
+
+{% extends 'layouts/default' %}
+{% block content %}
+<div class="container-fluid"> <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            {% block left_column %}
+                {% editable_text content %}Lorem ipsum{% endeditable_text %}
+            {% endblock %}
+        </div>
+
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            {% block right_column %}
+                {% editable_text content %}Lorem ipsum{% endeditable_text %}
+            {% endblock %}
+        </div>
+
+    </div>
+</div>
+{% endblock %}
