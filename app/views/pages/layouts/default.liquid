@@ -15,17 +15,57 @@ is_layout: false
 
     {{ 'bootstrap.css' | stylesheet_tag }}
     {{ 'application.css' | stylesheet_tag }}
+    {{ 'bootstrap-theme.css' | stylesheet_tag }}
+    {{ 'animations.css' | stylesheet_tag }}
+    {{ 'superfish.css' | stylesheet_tag }}
+    {{ 'prettyPhoto.css' | stylesheet_tag }}
+    <!-- Theme CSS -->
+    {{ 'style.css' | stylesheet_tag }}
+    {{ 'global.css' | stylesheet_tag }}
+    <!-- Skin -->
+    <!--{{ 'blue.css' | stylesheet_tag }} -->
+    <!--{{ 'teal.css' | stylesheet_tag }} -->
+    <!--    {{ 'brown.css' | stylesheet_tag }} -->
+    <!-- {{ 'golden.css' | stylesheet_tag }} -->
+    <!-- {{ 'gray.css' | stylesheet_tag }} -->
+    <!-- {{ 'grenn.css' | stylesheet_tag }} -->
+
+    <!-- {{ 'magenta.css' | stylesheet_tag }} -->
+    <!-- {{ 'orange.css' | stylesheet_tag }} -->
+    {{ 'purple.css' | stylesheet_tag }}
+    <!-- {{ 'red.css' | stylesheet_tag }} -->
+    {{ '/fonts/font-awesome/css/font-awesome.css' | stylesheet_tag }}
+    {{ 'theme-responsive.css' | stylesheet_tag }}
+
+
   </head>
-  <body>
-    {% include 'nav' %}
+  <body class="boxed home">
+      <body class="home" style="overflow-y: auto;">
+      <div id="main">
+          <div class="wrap">
+              <header id="header">
+                  <div id="undefined-sticky-wrapper" class="sticky-wrapper">
+                      <div class="main-header">
+                          <div class="container">
+                              {% include 'nav' %}
+                          </div>
+                      </div>
+                  </div>
+              </header>
+          </div>
 
-    {% block content %}
-    {% endblock %}
 
-    {% include 'footer' %}
+          {% block content %}
+          {% endblock %}
 
-    {{ 'jquery.min.js' | javascript_tag }}
-    {{ 'bootstrap.min.js' | javascript_tag }}
-    {{ 'application.js' | javascript_tag }}
+          {% include 'footer' %}
+
+          {{ 'jquery.min.js' | javascript_tag }}
+          {{ 'bootstrap.min.js' | javascript_tag }}
+          {{ 'application.js' | javascript_tag }}
+
+      </div>
+      </body>
   </body>
 </html>
+

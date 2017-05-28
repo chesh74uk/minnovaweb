@@ -1,26 +1,36 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{% path_to home %}">{{ site.name }}</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
+
+
+<div class="logo pull-left">
+    <h1><a class="navbar-brand" href="{% path_to home %}">{{ site.name }}</a></h1>
+</div>
+
+
+<div class="mobile navbar-header">
+    <a class="navbar-toggle" data-toggle="collapse" href=".navbar-collapse">
+        <i class="fa fa-bars fa-2x"></i>
+    </a>
+</div>
+
+
+
+
+
+
+
+<nav class="collapse navbar-collapse menu">
+    <ul class="nav navbar-nav sf-menu sf-js-enabled sf-arrows">
         <li class="{% if page.handle == 'home' %}active{% endif %}">
-          <a href="{% path_to home %}">Home</a>
+            <a href="{% path_to home %}">Home</a>
         </li>
         {% for page_in_nav in site.pages %}
-          {% if page_in_nav.depth == 1 %}
-            <li class="{% if page.fullpath == page_in_nav.fullpath %}active{% endif %}">
-              {% link_to page_in_nav %}
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
+        {% if page_in_nav.depth == 1 %}
+        <li class="{% if page.fullpath == page_in_nav.fullpath %}active{% endif %}">
+            {% link_to page_in_nav %}
+            {% endif %}
+            {% endfor %}
+    </ul>
 </nav>
+
+
+
+

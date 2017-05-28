@@ -9,3 +9,39 @@ Clear crewmates, to the moon. Courage at the saucer section that is when intelli
 Sonic showers view from nuclear fluxs like ship-wide particles. Starlight travel at the holodeck that is when seismic transporters meet. Love at the homeworld was the wind of ellipse, converted to a dead astronaut.
 
 Powerdrain at the infinity room was the mind of definition, outweighed to a terrifying machine.
+
+
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% path_to home %}">{{ site.name }}</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="{% if page.handle == 'home' %}active{% endif %}">
+                <a href="{% path_to home %}">Home</a>
+              </li>
+              {% for page_in_nav in site.pages %}
+                {% if page_in_nav.depth == 1 %}
+                  <li class="{% if page.fullpath == page_in_nav.fullpath %}active{% endif %}">
+                    {% link_to page_in_nav %}
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+
+
+                        <div class="ch-info">
+                            <div class="ch-info-front ch-img-1">
+                                <i class="fa fa-arrows-alt"></i>
+                            </div>
+                            <div class="ch-info-back">
+                                <div class="fa fa-arrows-alt"></div>
+                            </div>
+                        </div>
