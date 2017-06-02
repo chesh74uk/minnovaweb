@@ -27,7 +27,37 @@ is_layout: true
 #   'some_block/some_slug': "<text>"
 #   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
 ---
-{% extends 'layouts/simple' %}
-{% block main %}
+{% extends 'layouts/default' %}
+{% block content %}
 
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="posts-block col-lg-8 col-md-8 col-sm-6 col-xs-12">
+                    <article>
+                        <h3 class="title">{% editable_text title_1 %}Who We Are?{% endeditable_text %}</h3>
+                        <div class="post-content">
+                            <p>
+                                {% editable_text text_1 %}
+                                Why does the space suit tremble? Experiment wihtout starlight travel, and we won’t acquire an admiral. When the captain dies for atlantis tower, all tribbles fight ugly, extraterrestrial phenomenans. All those attitudes will be lost in lifes like disconnections in cores Transporters resist with honor! The colorful tribble unearthly fights the emitter. Tightly open an emitter. Fly, scotty. It is a brave friendship, sir. The kahless is more c-beam now than green people. evil and wildly cloudy. Alignment at the homeworld was the hypnosis of x-ray vision, accelerated to an ordinary ferengi.                                {% endeditable_text %}
+                            </p>
+                            <br>
+                        </div>
+                    </article>
+                    <article>
+                        <h3 class="title">{% editable_text title_2 %}What we do?{% endeditable_text %}</h3>
+                        <div class="post-content">
+                            <p>
+                                {% editable_text text_2 %}
+                                Planet of an extraterrestrial tragedy, observe the attitude! Bare alignments lead to the metamorphosis. Pedantically, indeed, bare disconnection! Rudely outweigh a ferengi. All those admirals grab ancient, fantastic sonic showers. Devastated, chemical cosmonauts never arrest a twisted, real alien. Transporter of an evil attitude, disrupt the beauty! The processor harvests ionic cannon like a mysterious proton. Vogons resist with x-ray vision at the photonic planet! I influence this ellipse, it's called cloudy love. Harmless, virtual suns finally love a terrifying, extraterrestrial particle. Tremble wihtout honor, and we won’t transfer a mermaid.                                {% endeditable_text %}
+                            </p>
+                            <br>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
 {% endblock %}
