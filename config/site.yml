@@ -50,7 +50,7 @@ meta_description: "some meta description"
 metafields:
   business_info:
     phone_number: "+44 123 456 7890"
-    address: "1 The Street, Awesomeville, DDB1 XYZ"
-    email: "chat@minnova.uk"
-    opening_hours: "Monday - Friday 9am - 5pm"
+    email: info@minnova.uk
+    opening_hours: Mon - Fri 9am - 5pm
+    closed: Saturday & Sunday
     closed: "Saturday & Sunday"

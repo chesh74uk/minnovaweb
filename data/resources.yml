@@ -1,24 +1,15 @@
-- "Sample 1":
-    description: "Animi accusantium veniam placeat. A accusantium sunt hic rerum dolor iste fuga. Veniam incidunt fugiat facere non vero eius est."
-    resource_date: 2017/05/25 # YYYY/MM/DD
-    # image: /samples/resources/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    # document: /samples/resources/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-
-- "Sample 2":
-    description: "Aut autem dolores. Dicta delectus consectetur illo ut omnis voluptatem. Error doloribus veritatis quos. Cupiditate veniam dolorem voluptatem voluptatibus labore."
-    resource_date: 2017/05/25 # YYYY/MM/DD
-    # image: /samples/resources/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    # document: /samples/resources/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-
-- "Sample 3":
-    description: "Ipsum qui quam ex. Voluptas ab culpa. Ut tempora tenetur. Vitae consequatur officia explicabo."
-    resource_date: 2017/05/25 # YYYY/MM/DD
-    # image: /samples/resources/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    # document: /samples/resources/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-
-- "Sample 4":
-    description: "Sunt atque doloremque qui delectus molestiae est. Non autem animi fuga eaque laborum nihil aut. Quaerat tempore quasi ut vel ea ipsa. Et id laborum. Eveniet voluptatem est aut."
-    resource_date: 2017/05/25 # YYYY/MM/DD
-    # image: /samples/resources/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-    # document: /samples/resources/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-
+- Plasma at the space station:
+    _slug: plasma-at-the-space-station
+    title: Plasma at the space station
+    description: "<p>Engage, greatly exaggerated pressure! Interstellar faiths lead
+      to the coordinates. Pattern at the habitat pedantically shields up was the sonic
+      shower of turbulence, placed to a bare sensor. History, nuclear flux, and disconnection.<br></p>"
+    resource_date: '2017-05-25'
+    image: "/samples/content_entries/Medium.jpeg"
+    document_name: Plasma at the space station
+    document: "/samples/content_entries/Plasma.pdf"
+- Terminated protons:
+    _slug: terminated-protons
+    title: Terminated protons
+    description: "<p>Vestibulum id ligula porta felis euismod semper. Nullam id dolor
+      id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis.<br></p>"
