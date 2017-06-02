@@ -28,11 +28,17 @@
 #
 # Simple example:
 #
-# shop:
-#   label: My shop location
-#   fields:
-#     address:
-#       type: string
+ business_info:
+   label: Business info
+   fields:
+     phone_number:
+       type: string
+     email:
+       type: string
+     opening_hours:
+       type: string
+     closed:
+       type: string
 #       hint: "Ex: 7 allee Albert Camus"
 #     city:
 #       type: string

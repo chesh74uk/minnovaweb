@@ -70,26 +70,26 @@
                                 <p>
                                     <strong class="contact-pad">Address: </strong>
                                     {% editable_text address %}
-                                    Address 1<br>
-                                    Town 1<br>
-                                    City 1
+                                    House 1
+                                    Awesomeville
+                                    DDB1 XYZ
                                     {% endeditable_text %}
+
+
                                 </p>
                             </li>
                             <li>
                                 <i class="fa fa-phone"></i>
                                 <p>
                                     <strong>Phone: </strong>
-                                    {% editable_text phone %}
-                                    +880 111-111-111
-                                    {% endeditable_text %}
+                                    {{ site.metafields.business_info.phone_number }}
                                 </p>
                             </li>
                             <li>
                                 <i class="fa fa-envelope"></i>
                                 <p>
                                     <strong>Email: </strong>
-                                    <a href="mailto:info@minnova.uk">info@minnova.uk</a>
+                                    <a href="mailto:{{ site.metafields.business_info.email }}">{{ site.metafields.business_info.email }}</a>
                                 </p>
                             </li>
                         </ul>
@@ -98,15 +98,11 @@
                         <h3 class="title">Business Hours</h3>
                         <ul class="business-hour">
                             <li><i class="fa fa-clock-o"> </i>
-                                {% editable_text opening_hours %}
-                                Open: Monday - Friday 9am to 5pm
-                                {% endeditable_text %}
+                                {{ site.metafields.business_info.opening_hours }}
                             </li>
 
                             <li><i class="fa fa-times-circle-o"> </i>
-                                {% editable_text closed %}
-                                Closed: Saturday & Sunday
-                                {% endeditable_text %}
+                                {{ site.metafields.business_info.closed }}
                             </li>
                         </ul>
                     </div>
