@@ -6,7 +6,7 @@ is_layout: true
 # "content/right_column/content": "<p>This is my awesome right column</p>"
 ---
 {% extends 'layouts/default' %}
-
+{% block content %}
 <div class="content">
     <div class="container">
         <div class="row">
@@ -14,30 +14,33 @@ is_layout: true
                 <article>
                     <h3 class="title">Overview</h3>
                     <div class="post-content">
-                        <div class="img-content">
-                            <img src="img/team/team.jpg" alt="">
-                        </div>
                         <p>
-                            {% block content %}
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                            {% endblock %}
-                        </p>
+                            {% editable_text overview %}
+                            Peace at the port that is when quirky dosis tremble. Ships are the tribbles of the calm courage. Spacecrafts are the processors of the strange mankind. I question this mind, it's called ugly alignment. This vision has only been destroyed by a carnivorous hur'q. Proud starlight travels lead to the sonic shower. The spacecraft flies ellipse like a distant space suit. Spaces die with alarm at the devastated habitat neverred alert! Engage. Why does the transporter walk? Wobble, scotty. Rumour at the colony that is when delighted particles view. Processors are the moons of the small death. Future, collision course, and flight. I empower this mineral, it's called harmless adventure. All the winds will be lost in modifications like stigmas in powerdrains.                        </p>
+                            {% endeditable_text %}
                     </div>
                 </article>
             </div>
             <!-- Left Section End -->
-            <!-- Skill Section Start -->
+            <!-- List Section Start -->
             <div class="choice col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                <h3 class="title">Our Guarantees</h3>
+                <h3 class="title">
+                    {% editable_text list_title %}
+                    List of things
+                    {% endeditable_text %}
+                </h3>
                 <ul class="check-list why">
-                    <li>Flexible, Responsive Layout</li>
-                    <li>Latest WordPress Compatible</li>
-                    <li>Cross Browsers Compatible</li>
-                    <li>Smartphones and Tablet Friendly</li>
-                    <li>Creative Responsive Template</li>
+                    {% editable_text list %}
+                    <li>Space suits resist with mankind! </li>
+                    <li>Cunningly empower a sensor. </li>
+                    <li>Technically experience a lieutenant commander. </li>
+                    <li>Mankind, understanding, and courage. </li>
+                    <li>Klingons walk with definition! </li>
+                    {% endeditable_text %}
                 </ul>
             </div>
-            <!-- Skill Section Start -->
+            <!-- List Section End -->
         </div>
     </div>
 </div>
+{% endblock %}
