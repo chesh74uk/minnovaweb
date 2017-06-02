@@ -2,55 +2,119 @@
 {% block content %}
     {% model_form 'customer_messages', success: '/', error: '/contact' %}
 
+    <!-- Main Content start-->
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12" id="contact-form">
+                    <h3 class="title">
+                        {% editable_text contact_heading %}
+                        Send Us an Email
+                        {% endeditable_text %}
+                    </h3>
+                    <p>
+                        {% editable_text contact_text %}
+                        Please feel free to send us a message
+                        {% endeditable_text %}
+                    </p>
+                    <form method="post" class="reply" id="contact">
+                        <fieldset>
+                            <div class="row">
 
+                                <div class="form-group has-error text-danger">
+                                    {% if customer_message.errors %}
+                                        <p>Please correct these errors:</p>
+                                        <ul>
+                                            {% for error in customer_message.errors %}
+                                                <li>{{error[0] | capitalize}} -  {{error[1]}}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% endif %}
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <label for="inputName" control-label">Name</label>
+                                    <input class="form-control" type="text" placeholder="Name" name="content[name]" value="{{customer_message.name}}" required>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <label for="inputEmail"  control-label">Email</label>
 
+                                    <input class="form-control" id="inputEmail" placeholder="Email" type="text" name="content[email]" value="{{customer_message.email}}" required>
+                                </div>
 
-
-<div class="container">
-       <div class="row">
-        <div class="col-lg-6">
-
-            <form>
-                <fieldset>
-                <legend>Contact us</legend>
-                <div class="form-group has-error text-danger">
-                            {% if customer_message.errors %}
-                                <p>Please correct these errors:</p>
-                                <ul>
-                                {% for error in customer_message.errors %}
-                                  <li>{{error[0] | capitalize}} -  {{error[1]}}</li>
-                                {% endfor %}
-                                </ul>
-                            {% endif %}
                             </div>
-                    <div class="form-group">
-                        <label for="inputName" control-label">Name</label>
-                            <input class="form-control" type="text" name="content[name]" value="{{customer_message.name}}">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <label for="textArea" control-label">Message</label>
+                                    <textarea class="form-control" rows="3" cols="40" placeholder="Your message here..." id="textArea" name="content[message]" required>{{customer_message.message}}</textarea>
+                                </div>
+
+                            </div>
+
+                        </fieldset>
+                        <div class="divider"></div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-normal btn-color submit  bottom-pad">Submit</button>
+                            <div class="success alert-success alert" style="display:none">Your message has been sent successfully.</div>
+                        </div>
+
+                        <div class="clearfix">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
+                    <div class="address widget">
+                        <h3 class="title">Head Office</h3>
+                        <ul class="contact-us">
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                <p>
+                                    <strong class="contact-pad">Address: </strong>
+                                    {% editable_text address %}
+                                    Address 1<br>
+                                    Town 1<br>
+                                    City 1
+                                    {% endeditable_text %}
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <p>
+                                    <strong>Phone: </strong>
+                                    {% editable_text phone %}
+                                    +880 111-111-111
+                                    {% endeditable_text %}
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <p>
+                                    <strong>Email: </strong>
+                                    <a href="mailto:info@minnova.uk">info@minnova.uk</a>
+                                </p>
+                            </li>
+                        </ul>
                     </div>
+                    <div class="contact-info widget">
+                        <h3 class="title">Business Hours</h3>
+                        <ul class="business-hour">
+                            <li><i class="fa fa-clock-o"> </i>
+                                {% editable_text opening_hours %}
+                                Open: Monday - Friday 9am to 5pm
+                                {% endeditable_text %}
+                            </li>
 
-                     <div class="form-group">
-                         <label for="inputEmail"  control-label">Email</label>
-
-                               <input class="form-control" id="inputEmail" placeholder="Email" type="text" name="content[email]" value="{{customer_message.email}}">
-                     </div>
-
-                     <div class="form-group">
-                        <label for="textArea" control-label">Message</label>
-                            <textarea class="form-control" rows="3" placeholder="Your message here..." id="textArea" name="content[message]">{{customer_message.message}}</textarea>
-                     </div>
-
-                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                     </div>
-
-                </fieldset>
-            </form>
-
-
+                            <li><i class="fa fa-times-circle-o"> </i>
+                                {% editable_text closed %}
+                                Closed: Saturday & Sunday
+                                {% endeditable_text %}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
         </div>
     </div>
-</div>
-
 
     {% endmodel_form %}
 {% endblock %}
