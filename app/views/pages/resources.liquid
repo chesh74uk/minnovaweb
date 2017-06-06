@@ -31,11 +31,49 @@ published: true
 
 {% block content %}
 {%  editable_model, resources, hint: 'edit resource links' %}
-  <p>Our list of resources</p>
-    <ul>
-      {% for resource in contents.resources %}
-        <li><a href="{% path_to resource %}">{{ resource.title }}</a></li>
-      {% endfor %}
-    </ul>
+
+
+  <div class="content">
+      <div class="container">
+          <div class="row">
+              <div class="posts-block col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                  <h3 class="title">{%  editable_text title %}Our list of resources{% endeditable_text %}</h3>
+                    {% for resource in contents.resources %}
+                      <article class="post hentry">
+                          <div class="post-image">
+                              <a href="{{ resource.image.url }}" data-rel="prettyPhoto">
+                                  <span class="img-hover"></span>
+                                  <span class="fullscreen"><i class="fa fa-search"></i></span>
+                                  <img src="{{ resource.image.url }}" alt="">
+                              </a>
+                          </div>
+                          <div class="post-content-wrap">
+                              <header class="post-header">
+                                  <div class="post-date">
+                                      <a class="date" href="#"><strong>{{ resource.resource_date | localized_date: '%d' }}</strong><i>{{ resource.resource_date | localized_date: '%b' }}</i></a>
+                                  </div>
+                                  <h3 class="content-title">{{ resource.title }}</h3>
+                                  <div class="blog-entry-meta">
+                                      <div class="blog-entry-meta-tags">
+                                          <i class="fa fa-tags"></i>
+                                          <a href="{{ resource.document.url }}">{{ resource.document_name }}</a>
+                                      </div>
+                                  </div>
+                              </header>
+                              <div class="post-content">
+                                  <p>{{ resource.description }}</p>
+                              </div>
+                          </div>
+                          <div class="clearfix"></div>
+                      </article>
+                    {% endfor %}
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
 {% endeditable_model %}
 {% endblock %}
+
