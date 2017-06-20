@@ -21,7 +21,7 @@ development:
   email: chesh@chesh.info
   api_key: 5925ed83aacf75b0198927314b17e6805ca1ea34
 
-production:
+uat:
   host: https://minnova-web.herokuapp.com
   handle: sensitive-chasm-6112
   email: chesh@chesh.info
