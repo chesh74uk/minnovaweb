@@ -77,7 +77,7 @@
 }
 
 #current,.menu ul li a:hover,.menu ul>li:hover>a {
-		background-color:#323B44;
+		background-color:#606086;
 }
 #current:after {
 	bottom:-2.5px;
@@ -105,7 +105,7 @@
 	transition:border 150ms ease-in-out,background-color 150ms ease-in-out;
 }
 .menu ul ul {
-	background-color:#323B44;
+	background-color:#606086;
 	z-index:999;
 	border-radius:0 0 3px 3px;
 	margin:-3px 0 0 0;

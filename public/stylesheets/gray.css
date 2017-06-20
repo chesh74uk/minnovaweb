@@ -1,7 +1,7 @@
 /*Gray #555555 & #747474 */
 
 .btn:focus, .subscribe-btn, .progress .progress-bar, .accordionMod .panel-heading .current, #current:after, .tp-leftarrow.default:hover,.tp-rightarrow.default:hover, .nivo-prevNav:hover, .nivo-nextNav:hover, .contact-box:hover, #options li a.selected, .ch-info-front {
-    background: #555555;
+    background: #3D3D51;
 }
 
 .bg-color {
@@ -14,7 +14,7 @@
 }
 
 .ch-info-back {
-	background: rgba(85, 85, 85, 0.7) !important;
+	background: #606086 !important;
 }
 
 .tp-leftarrow.default:hover,.tp-rightarrow.default:hover, .nivo-prevNav:hover, .nivo-nextNav:hover {
@@ -40,11 +40,11 @@
 }
 
 .btn-color:hover, .subscribe-btn:hover {
-	background: #747474;
+	background: #3D3D51;
 }
 
 .btn-color, .subscribe-btn {
-	background: #555555;
+	background: #606086;
 	cursor: pointer;
 }
 
@@ -68,5 +68,5 @@ ul.why li:before {
 }
 
 a, .post-item h4 a:hover, .cn-wrapper li a:hover, .cn-wrapper li a.active, .color {
-    color: #555555;
+    color: #3D3D51;
 }
