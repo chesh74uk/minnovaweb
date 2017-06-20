@@ -2377,19 +2377,21 @@ header .social li.rss:hover,footer .social li.rss:hover {
 /* Team member*/
 
 .team-member {
-    display: block;
-    margin: 0 auto 50px;
+    display: inline-block;
+    vertical-align: top;
     width: 100%;
-    max-width: 350px;
-    padding: 0;
+    padding: 0 20px;
+    margin-bottom: 40px;
 }
 
 .team-member-image {
-    float: none;
-    overflow: visible;
-    height: 0;
+    display: inline-block;
+    float: left;
     width: 100%;
-    padding-bottom: 100%;
+    line-height: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
 }
 
 .team-member-image img {
