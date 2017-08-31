@@ -61,52 +61,6 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                    <div class="address widget">
-                        <h3 class="title">Head Office</h3>
-                        <ul class="contact-us">
-                            <li>
-                                <i class="fa fa-map-marker"></i>
-                                <p>
-                                    <strong class="contact-pad">Address: </strong>
-                                    {% editable_text address %}
-                                    House 1
-                                    Awesomeville
-                                    DDB1 XYZ
-                                    {% endeditable_text %}
-
-
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa fa-phone"></i>
-                                <p>
-                                    <strong>Phone: </strong>
-                                    {{ site.metafields.business_info.phone_number }}
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa fa-envelope"></i>
-                                <p>
-                                    <strong>Email: </strong>
-                                    <a href="mailto:{{ site.metafields.business_info.email }}">{{ site.metafields.business_info.email }}</a>
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="contact-info widget">
-                        <h3 class="title">Business Hours</h3>
-                        <ul class="business-hour">
-                            <li><i class="fa fa-clock-o"> </i>
-                                {{ site.metafields.business_info.opening_hours }}
-                            </li>
-
-                            <li><i class="fa fa-times-circle-o"> </i>
-                                {{ site.metafields.business_info.closed }}
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
             <div class="divider"></div>
         </div>
