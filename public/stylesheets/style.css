@@ -1,5 +1,5 @@
 body {
-    color: #6A1487;
+    color: #777777;
 	background:#F1F2F7;
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
     font-size: 14px;
@@ -130,7 +130,7 @@ a:hover,a:focus {
     z-index: 9999;
     width: 100%;
     position: relative;
-	background:#6A1487; /*323B44*/
+	background:#323B44; /*323B44*/
     -webkit-box-shadow: 0 3px 3px -3px rgba(0,0,0,0.2);
     box-shadow: 0 3px 3px -3px rgba(0,0,0,0.2);
 }
@@ -1467,7 +1467,7 @@ span.color {
 }
 
 .footer-bottom {
-    background: #6A1487;
+    background: #323B44;
     color: #888;
     line-height: 38px;
     padding: 15px;
