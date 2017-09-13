@@ -29,7 +29,6 @@ is_layout: true
 ---
 {% extends 'layouts/default' %}
 {% block content %}
-
     <div class="content">
         <div class="container">
             <div class="row">
@@ -63,19 +62,23 @@ is_layout: true
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <h3 class="title">{% editable_text title_3 %}Our team{% endeditable_text %}</h3>
                     <div class="row team">
-                        {% for team in contents.team %}
+                        {% for member in contents.members %}
                         <!-- item 1 -->
+
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="team-member">
                                 <div class="team-member-holder">
                                     <div class="team-member-image">
-                                        <img alt="" src="{{ team.photo.url }}">
+                                        <img alt="" src="{{ member.photo.url }}">
                                     </div>
 
                                     <div class="team-member-meta">
-                                        <h4 class="team-member-name">{{ team.name }}</h4>
-                                        <div class="team-member-role">{{ team.role }}</div>
-                                        <div class="team-member-description">{{ team.profile }}</div>
+                                        <a href="{% path_to member %}">
+                                            <h4 class="team-member-name">{{ member.name }}</h4>
+                                        </a>
+                                        <a href="{% path_to member %}">
+                                            <div class="team-member-role">{{ member.role }}</div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

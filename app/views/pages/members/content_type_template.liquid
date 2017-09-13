@@ -1,0 +1,31 @@
+---
+title: Member page
+content_type: members
+---
+
+{% extends 'layouts/default' %}
+{% block content %}
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h3 class="title">{{ member.name }}</h3>
+                    <div class="row team">
+                        <div class="team-member">
+                            <div class="team-member-holder">
+                                <div class="team-member-image">
+                                    <img alt="" src="{{ member.photo.url }}">
+                                </div>
+
+                                <div class="team-member-meta">
+                                    <div class="team-member-role">{{ member.role }}</div>
+                                    <div class="team-member-description">{{ member.profile }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

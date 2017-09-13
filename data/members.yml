@@ -1,0 +1,20 @@
+- "Sample 1":
+    role: "Quod non quo tempora maiores sint est eum."
+    profile: "Quam et non. Laudantium delectus sed itaque excepturi. Sint modi earum voluptas quo odit at. Aut velit ut dolor aspernatur ipsum voluptatem. Nam ipsam dolorem quia voluptatibus incidunt."
+    # photo: /samples/members/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+
+- "Sample 2":
+    role: "Nobis in magnam eaque vero omnis labore consequatur accusantium."
+    profile: "Vel nulla sed natus aperiam doloremque ut. Facilis quia possimus et est consequatur. Id non ad rerum est quasi. Omnis veniam non ut mollitia suscipit architecto."
+    # photo: /samples/members/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+
+- "Sample 3":
+    role: "Aut nesciunt natus qui quasi."
+    profile: "Facere voluptatem sapiente assumenda. Consequatur praesentium voluptatem ea aut. Voluptatum corporis incidunt repudiandae at cum."
+    # photo: /samples/members/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+
+- "Sample 4":
+    role: "Cupiditate cumque corrupti sed."
+    profile: "Quia aut aut sed ipsa consectetur. Enim et officia. Ducimus sint iure laudantium. Quibusdam earum et et in nostrum."
+    # photo: /samples/members/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+
