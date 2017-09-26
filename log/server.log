@@ -73,3 +73,6 @@ I, [2017-08-31T18:59:06.571914 #42867]  INFO -- : Listening on 0.0.0.0:3333, CTR
 I, [2017-09-13T16:20:24.492683 #6125]  INFO -- : Thin web server (v1.6.4 codename Gob Bluth)
 I, [2017-09-13T16:20:24.501516 #6125]  INFO -- : Maximum connections set to 1024
 I, [2017-09-13T16:20:24.501571 #6125]  INFO -- : Listening on 0.0.0.0:3333, CTRL+C to stop
+I, [2017-09-26T13:18:59.201477 #4039]  INFO -- : Thin web server (v1.6.4 codename Gob Bluth)
+I, [2017-09-26T13:18:59.212669 #4039]  INFO -- : Maximum connections set to 1024
+I, [2017-09-26T13:18:59.212723 #4039]  INFO -- : Listening on 0.0.0.0:3333, CTRL+C to stop
