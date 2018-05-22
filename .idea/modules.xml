@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../minnovaengine/.idea/minnovaengine.iml" filepath="$PROJECT_DIR$/../minnovaengine/.idea/minnovaengine.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/minnovaweb.iml" filepath="$PROJECT_DIR$/.idea/minnovaweb.iml" />
     </modules>
   </component>

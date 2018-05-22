@@ -7,8 +7,6 @@ content_type: resources
 <h1>{{ resource.title }}</h1>
 <p>{{ resource.description }}</p>
 
-    <p><img src="{{ resource.image.url }}" alt=""></p>
-
     <a href ="{{ resource.document.url }}"><i><u>{{ resource.document_name }}</u></i></a> {{ resource.resource_date | localized_date: '%d/%m/%Y' }}</p>
 
 
